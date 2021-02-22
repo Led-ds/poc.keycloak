@@ -31,7 +31,7 @@ public class HelloWorldController {
 	public String login(@RequestParam("username") final String username, @RequestParam("password") final String password)
 			throws UnsupportedOperationException, IOException {
 		
-		String uri = "http://localhost:8180/auth/realms/SpringBootKeycloak/protocol/openid-connect/token";
+		String uri = "http://10.0.2.2:8180/auth/realms/SpringBootKeycloak/protocol/openid-connect/token";
 
         HttpClient client = HttpClientBuilder.create().build();
         HttpPost post = new HttpPost(uri);
